@@ -1,5 +1,5 @@
 // External API- IMDB Search, and setting newMovie object
-function movieSearch() {
+movieSearch = () => {
   const searchInput = "";
 
   queryURL = "http://www.omdbapi.com/?t=" + searchInput + "&apikey=6c279cf4";
@@ -24,7 +24,7 @@ function movieSearch() {
 movieSearch();
 
 // // Code for future use when populating divs
-// movieSearch.click(() => {
+// movieSelect.click(() => {
 //   $(".movie-name").append(newMovie.name);
 //   $(".poster-image").attr("src", newMovie.poster);
 //   // Make sure to use this code in HTML: <img class="images" height="300" src="">

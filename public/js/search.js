@@ -1,6 +1,12 @@
 // External API- IMDB Search, and setting newMovie object
+let searchInput = [];
+
 movieSearch = () => {
-  const searchInput = "Avengers Endgame";
+  searchInput = $("#searchInput")
+    .val()
+    .trim();
+  console.log("clicked");
+  console.log(searchInput);
 
   queryURL = "http://www.omdbapi.com/?t=" + searchInput + "&apikey=6c279cf4";
 
@@ -17,15 +23,22 @@ movieSearch = () => {
       rating: response.Rated,
       releaseDate: response.Released,
       genre: response.Genre
-    }
+    };
+
+    movieFill();
   });
 };
 
-movieSearch();
-
 // Code for future use when populating divs
-$("#movieSelect").click(() => {
-  console.log("clicked");
+
+movieFill = () => {
+  $(".movie-name").empty();
+  $(".poster-image").empty();
+  $(".synopsis").empty();
+  $(".rating").empty();
+  $(".release-date").empty();
+  $(".genre").empty();
+
   $(".movie-name").append(newMovie.name);
   $(".poster-image").attr("src", newMovie.poster);
   // Make sure to use this code in HTML:<img class="poster-image" height="300" src="">
@@ -33,4 +46,6 @@ $("#movieSelect").click(() => {
   $(".rating").append(newMovie.rating);
   $(".release-date").append(newMovie.releaseDate);
   $(".genre").append(newMovie.genre);
-});
+};
+
+$("#movieSelect").on("click", movieSearch);

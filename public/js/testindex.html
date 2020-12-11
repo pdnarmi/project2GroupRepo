@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
-    <button class="waves-effect waves-light btn" id="movieSelect">Search</button>
+
+    <div class="input-field">
+        <input placeholder="Enter Movie" id="searchInput" type="text" class="validate">
+        <a class="waves-effect waves-light btn" id="movieSelect">Search</a>
+    </div>
+    
+    
     <h1 class="movie-name"></h1>
-    <img class="poster-image" alt="Image" height="300" src="">
+    <img class="poster-image" height="300" src="">
     <p class="synopsis"></p>
     <h4 class="rating"></h4>
     <h4 class="release-date"></h4>

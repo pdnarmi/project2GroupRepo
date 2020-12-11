@@ -21,10 +21,15 @@ function movieSearch() {
   });
 }
 
-// Code for future use when populating divs
-
-$(".movie-name").append(newMovie.name);
-$(".poster-image").attr("src", newMovie.poster);
-
-
 movieSearch();
+
+// // Code for future use when populating divs
+// movieSearch.click(() => {
+//   $(".movie-name").append(newMovie.name);
+//   $(".poster-image").attr("src", newMovie.poster);
+//   // Make sure to use this code in HTML: <img class="images" height="300" src="">
+//   $(".synopsis").append(newMovie.synopsis);
+//   $(".rating").append(newMovie.rating);
+//   $(".release-date").append(newMovie.releaseDate);
+//   $(".genre").append(newMovie.genre);
+// });

@@ -1,9 +1,26 @@
 body {
   background-color: black;
 }
+
 nav {
-  background-color: gray;
+  background-color: black;
 }
+
+.jumbotron {
+  background-color: black;
+  border-color: black;
+}
+
+a {
+  color: black;
+  font-size: 30px;
+}
+
+.card {
+  margin: 0px;
+  padding-bottom: 0px;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;

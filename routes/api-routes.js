@@ -13,8 +13,7 @@ module.exports = function(app) {
       rating: req.body.rating,
       releaseDate: req.body.releaseDate,
       genre: req.body.genre,
-      review: req.body.review,
-      score: req.body.score
+      review: req.body.review
     }).then(dbMovie => {
       res.json(dbMovie);
     });

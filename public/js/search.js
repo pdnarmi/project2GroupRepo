@@ -5,7 +5,6 @@ movieSearch = () => {
   searchInput = $("#searchInput")
     .val()
     .trim();
-  console.log("clicked");
   console.log(searchInput);
 
   queryURL = "http://www.omdbapi.com/?t=" + searchInput + "&apikey=6c279cf4";
@@ -48,4 +47,10 @@ movieFill = () => {
   $(".genre").append(newMovie.genre);
 };
 
+submitReview = () => {
+  event.preventDefault();
+  console.log("submit clicked!");
+}
+
 $("#movieSelect").on("click", movieSearch);
+$("#submitReview").on("click", submitReview);

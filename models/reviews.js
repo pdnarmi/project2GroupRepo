@@ -13,33 +13,13 @@ module.exports = (sequelize, DataTypes)=>{
                 len:[1,3000]
             }
         },
-        plotScore:{
+        userScore:{
             type: DataTypes.INTEGER,
-            allowNull: true,
+            allowNull: false,
             validate:{
                 min: 1,
                 max: 5
             }
-        },
-        lightingDesignScore:{
-            type: DataTypes.INTEGER,
-            allowNull: true,
-            validate:{
-                min: 1,
-                max: 5
-            }
-        },
-        soundDesignScore:{
-            type: DataTypes.INTEGER,
-            allowNull: true,
-            validate:{
-                min: 1,
-                max: 5
-            }
-        },
-        watchAgain:{
-            type: DataTypes.BOOLEAN,
-            allowNull: false
         }
     });
     return Review;

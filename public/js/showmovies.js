@@ -1,13 +1,21 @@
-const showTitle = $("h3.titlefromdb");
-const poster = $("img.posterfromdb");
+const title = $("h3.title");
+const poster = $("img.poster");
+const synopsis = $("p.synopsis");
+const rating = $("h4.rating");
+const release = $("h4.release-date");
+const genre = $("h4.genre");
+const review = $("h4.review");
 
 showMovies = () => {
-  console.log("Movies: ", movies);
   // eslint-disable-next-line array-callback-return
   Object.keys(movies).map(key => {
-    showTitle.append(movies[key].title);
+    title.append(movies[key].title);
     poster.attr("src", movies[key].poster);
-    console.log("movies: ", movies[key].title);
+    synopsis.append(movies[key].synopsis);
+    rating.append(movies[key].rating);
+    release.append(movies[key].releaseDate);
+    genre.append(movies[key].genre);
+    review.append(movies[key].review);
   });
 };
 

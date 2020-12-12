@@ -14,15 +14,15 @@ module.exports = function(app) {
       releaseDate: req.body.releaseDate,
       genre: req.body.genre,
       review: req.body.review
-    }).then(dbMovie => {
-      res.json(dbMovie);
+    }).then(Movie => {
+      res.json(Movie);
     });
   });
 
   // GET route for getting all of the movies
   app.get("/api/movies", (req, res) => {
-    db.Movie.findAll({}).then(dbMovie => {
-      res.json(dbMovie);
+    db.Movie.findAll({}).then(Movie => {
+      res.json(Movie);
     });
   });
 

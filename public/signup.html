@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Passport Authentication</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css"
+    />
+    <link href="stylesheets/style.css" rel="stylesheet" />
+  </head>
 
 <head>
-  <title>Passport Authentication</title>
+  <title>Sign Up Page</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-  <link href="stylesheets/style.css" rel="stylesheet">
+  <link href="stylesheets/login.css" rel="stylesheet">
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-      </div>
-    </div>
-  </nav>
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
-        <h2>Sign Up Form</h2>
+        <h1>Sign Up Today</h1>
+        <br /><br />
+        <img src= "Notflix_title.PNG"></img>
+        <br /><br /><br />
+        <br /><br /><br />
+        <br />
         <form class="signup">
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="email-input" placeholder="Email">
+            <label for="exampleInputEmail1">First Name:</label>
+            <input type="first-name" class="form-control" id="firstname-input" placeholder="First Name">
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
+            <label for="exampleInputEmail1">Last Name:</label>
+            <input type="last-name" class="form-control" id="lastname-input" placeholder="Last Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">E-mail Address:</label>
+            <input type="email" class="form-control" id="email-input" placeholder="E-mail Address">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password:</label>
             <input type="password" class="form-control" id="password-input" placeholder="Password">
           </div>
           <div style="display: none" id="alert" class="alert alert-danger" role="alert">
@@ -36,14 +53,13 @@
           <button type="submit" class="btn btn-default">Sign Up</button>
         </form>
         <br />
-        <p>Or log in <a href="/login">here</a></p>
+        <br />
+        <p><a href="login.html">Made a mistake? Back to Login!</a></p>
+        <p><a href="forgotpassword.html">Forgot your password?</a></p>
       </div>
     </div>
-  </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/signup.js"></script>
-
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/signup.js"></script>
+  </body>
 </html>

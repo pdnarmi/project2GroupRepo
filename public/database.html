@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <link href="stylesheets/members.css" rel="stylesheet">
+  <link href="stylesheets/database.css" rel="stylesheet">
 </head>
 
 <body>
@@ -18,61 +18,32 @@
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">Definitely not Netflix</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li>
+            <div class="nav-wrapper">
+                <form>
+                  <div class="input-field">
+                    <input id="search" type="search" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                  </div>
+                </form>
+              </div>
+        </li>
         <li><a href="members.html">Home</a></li>
         <li><a href="database.html">Database</a></li>
         <li><a href="/logout"">Log Out</a></li>
       </ul>
     </div>
   </nav>
+  
         
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
         <img src= "Notflix_title.PNG"></img>
-        <br>
-        <h2>Welcome <span class="member-name"></span></h2>
       </div>
     </div>
   </div>
-<!-- Insert card for Suggestions  -->
-<div class="row">
-    <div class= "grid-container starter"></div>
-</div>
-
-<!-- Insert card for Database -->
-<div class="row">
-    <div class= "grid-container starter"></div>
-</div>
-
-<!-- Insert card for Search Histroy -->
-<div class="row">
-    <div class= "grid-container starter"></div>
-</div>
-
-
-<footer class="page-footer red">
-    <div class="container">
-      <div class="row">
-        <div class="col l12">
-          <div class="row">
-            <div class="col l3">
-              <img
-                src="#"
-                height="200"
-                alt="#""
-              />
-            </div>
-            <div class="col l1"></div>
-            <div class="col l8">
-              <h5 class="white-text">NOTFLIX</h5>
-              <p class="grey-text text-lighten-4">
-                We love movies as much as you and want to be able to rewatch our favorites over and over. Notflix: Search, Rate, Recommend, and find your favorites movies. 
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/members.js"></script>

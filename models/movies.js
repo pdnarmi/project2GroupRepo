@@ -6,8 +6,7 @@ module.exports = function(sequelize, DataTypes) {
     rating: DataTypes.STRING,
     releaseDate: DataTypes.STRING,
     genre: DataTypes.STRING,
-    review: DataTypes.STRING,
-    score: DataTypes.INTEGER
+    review: DataTypes.STRING
   });
   return Movie;
 };

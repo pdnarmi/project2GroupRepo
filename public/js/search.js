@@ -47,10 +47,21 @@ movieFill = () => {
   $(".genre").append(newMovie.genre);
 };
 
+const reviewInput = $("input.movieReview");
+
 submitReview = () => {
-  event.preventDefault();
   console.log("submit clicked!");
-}
+  const movieData = {
+    title: newMovie.name,
+    poster: newMovie.poster,
+    synopsis: newMovie.synopsis,
+    rating: newMovie.rating,
+    releaseDate: newMovie.releaseDate,
+    genre: newMovie.genre,
+    review: reviewInput.val().trim()
+  };
+  console.log(movieData);
+};
 
 $("#movieSelect").on("click", movieSearch);
 $("#submitReview").on("click", submitReview);

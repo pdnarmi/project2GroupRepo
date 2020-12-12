@@ -61,6 +61,28 @@ submitReview = () => {
     review: reviewInput.val().trim()
   };
   console.log(movieData);
+
+  postMovie(
+    movieData.title,
+    movieData.poster,
+    movieData.synopsis,
+    movieData.rating,
+    movieData.releaseDate,
+    movieData.genre,
+    movieData.review
+  );
+};
+
+postMovie = (title, poster, synopsis, rating, releaseDate, genre, review) => {
+  $.post("/api/movies", {
+    title: title,
+    poster: poster,
+    synopsis: synopsis,
+    rating: rating,
+    releaseDate: releaseDate,
+    genre: genre,
+    review: review
+  });
 };
 
 $("#movieSelect").on("click", movieSearch);

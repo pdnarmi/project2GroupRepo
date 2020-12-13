@@ -3,6 +3,29 @@ const db = require("../models");
 const passport = require("../config/passport");
 
 module.exports = function(app) {
+  // POST route saving a new movie
+  app.post("/api/movies", (req, res) => {
+    console.log(req.body);
+    db.Movie.create({
+      title: req.body.title,
+      poster: req.body.poster,
+      synopsis: req.body.synopsis,
+      rating: req.body.rating,
+      releaseDate: req.body.releaseDate,
+      genre: req.body.genre,
+      review: req.body.review
+    }).then(Movie => {
+      res.json(Movie);
+    });
+  });
+
+  // GET route for getting all of the movies
+  app.get("/api/movies", (req, res) => {
+    db.Movie.findAll({}).then(Movie => {
+      res.json(Movie);
+    });
+  });
+
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error

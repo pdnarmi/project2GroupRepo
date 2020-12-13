@@ -1,0 +1,40 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    text-align: center;
+}
+  
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
+  
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+  
+body {
+    background-color: black;
+}
+  
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: red;
+
+}
+
+
+nav {
+    background-color: black;
+  }
+

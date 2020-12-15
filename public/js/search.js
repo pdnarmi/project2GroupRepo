@@ -1,11 +1,15 @@
 // External API- IMDB Search, and setting newMovie object
 let searchInput = [];
 
+// Initialize Modal
+$(document).ready(() => {
+  $(".modal").modal();
+});
+
 movieSearch = () => {
   searchInput = $("#searchInput")
     .val()
     .trim();
-  console.log(searchInput);
 
   queryURL = "http://www.omdbapi.com/?t=" + searchInput + "&apikey=6c279cf4";
 
@@ -13,8 +17,6 @@ movieSearch = () => {
     url: queryURL,
     method: "GET"
   }).then(response => {
-    console.log(response);
-
     newMovie = {
       name: response.Title,
       poster: response.Poster,
@@ -40,17 +42,15 @@ movieFill = () => {
 
   $(".movie-name").append(newMovie.name);
   $(".poster-image").attr("src", newMovie.poster);
-  // Make sure to use this code in HTML:<img class="poster-image" height="300" src="">
   $(".synopsis").append(newMovie.synopsis);
-  $(".rating").append(newMovie.rating);
-  $(".release-date").append(newMovie.releaseDate);
+  $(".rating").append("Rated ", newMovie.rating);
+  $(".release-date").append("Released on ", newMovie.releaseDate);
   $(".genre").append(newMovie.genre);
 };
 
 const reviewInput = $("input.movieReview");
 
 submitReview = () => {
-  console.log("submit clicked!");
   const movieData = {
     title: newMovie.name,
     poster: newMovie.poster,
@@ -60,7 +60,6 @@ submitReview = () => {
     genre: newMovie.genre,
     review: reviewInput.val().trim()
   };
-  console.log(movieData);
 
   postMovie(
     movieData.title,

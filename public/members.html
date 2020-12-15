@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Passport Authentication</title>
+  <title>Notflix</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
@@ -63,21 +63,15 @@
             <br>
             <h5 class="genre"></h5>
           </div>
-
         </div>
-        
-      <br>
-
-      <div class="row">
-        
-          <!-- Review field -->
-          <div class="input-field">
-            <input class="movieReview" placeholder="Enter your review here!" id="movieReview" type="text">
-            <a class="submit btn modal-close" id="submitReview">Submit Review</a>
-          
+        <br>
+        <div class="row">
+            <!-- Review field -->
+            <div class="input-field">
+              <input class="movieReview" placeholder="Enter your review here!" id="movieReview" type="text">
+              <a class="submit btn modal-close" id="submitReview">Submit Review</a>
+          </div>
         </div>
-      </div>
-
       </div>
     </div>
   </div>
@@ -99,7 +93,6 @@
       <div class="recently-watched"></div>
     </div>
 </div>
-
 <!-- Modal for reviewed movie -->
 <div id="modal2" class="modal container">
   <div class="row">
@@ -108,19 +101,22 @@
       <h1 class="title"></h1>
       <div class="row">
         <div class="col-sm-5">
-          <img class="poster" height="300" src="">
+          <img class="poster" height="350" src="">
         </div>
         <div class="col-sm-7">
           <h4>Synopsis: </h4>
           <p class="synopsis"></p>
           <br>
           <h4 class="rating"></h4>
+          <br>
           <h5 class="release-date"></h5>
+          <br>
           <h5 class="genre"></h5>
         </div>
       </div>
+      <br>
       <div class="row">
-        <h5 class="review"></h5>
+        <p class="review"></p>
       </div>
     </div>
   </div>

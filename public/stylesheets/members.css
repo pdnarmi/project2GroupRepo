@@ -27,6 +27,11 @@ h5 {
   left: 0;
 }
 
+.poster {
+  position: absolute;
+  left: 0;
+}
+
 #movieReview {
   padding: 5px;
   background-color: rgb(30, 30, 30);

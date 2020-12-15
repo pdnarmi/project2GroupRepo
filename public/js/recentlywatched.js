@@ -4,7 +4,7 @@ const synopsis = $("p.synopsis");
 const rating = $("h4.rating");
 const release = $("h5.release-date");
 const genre = $("h5.genre");
-const review = $("h5.review");
+const review = $("p.review");
 
 $(document).ready(() => {
   $(".modal").modal();
@@ -40,7 +40,7 @@ generateList = () => {
       rating.append("Rated ", movies[i].rating);
       release.append("Released on ", movies[i].releaseDate);
       genre.append(movies[i].genre);
-      review.append("Your Review: ", movies[i].review);
+      review.append("<h4>Your Review:</h4> ", movies[i].review);
     };
 
     $(displayedMovie).on("click", showClickedMovie);

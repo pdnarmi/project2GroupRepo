@@ -5,3 +5,11 @@ body {
 nav {
   background-color: black;
 }
+
+.jumbotron {
+  background-color: black;
+  border-color: black;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  max-height: 275px;
+}

@@ -1,7 +1,6 @@
-
 .btn {
   font-family: Arial, Helvetica, sans-serif;
-  background-color:red;
+  background-color: red;
   color: white;
   width: 80px;
   height: 35px;
@@ -14,7 +13,7 @@ a {
   color: red;
   width: 30px;
   height: 10px;
-  border-radius: 5px;    
+  border-radius: 5px;
   text-align: center;
 }
 
@@ -24,7 +23,7 @@ h1 {
   text-align: center;
 }
 
-p {  
+p {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   color: white;
@@ -38,6 +37,14 @@ label {
 
 body {
   background-color: black;
+}
+
+.jumbotron {
+  background-color: black;
+  border-color: black;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  max-height: 275px;
 }
 
 form.signup,

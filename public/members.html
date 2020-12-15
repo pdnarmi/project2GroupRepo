@@ -59,9 +59,9 @@
             <br>
             <h4 class="rating"></h4>
             <br>
-            <h5 class="release-date"></h4>
-              <br>
-            <h5 class="genre"></h4>
+            <h5 class="release-date"></h5>
+            <br>
+            <h5 class="genre"></h5>
           </div>
 
         </div>
@@ -94,7 +94,36 @@
 
 <!-- Insert card for Search Histroy -->
 <div class="row">
-    <div class= "grid-container starter"></div>
+    <div class= "grid-container starter recviewd">
+      <h4 class="">Recently Reviewed:</h4>
+      <div class="recently-watched"></div>
+    </div>
+</div>
+
+<!-- Modal for reviewed movie -->
+<div id="modal2" class="modal container">
+  <div class="row">
+    <div class="col-md-11 col-md-offset-1">
+      <br>
+      <h1 class="title"></h1>
+      <div class="row">
+        <div class="col-sm-5">
+          <img class="poster" height="300" src="">
+        </div>
+        <div class="col-sm-7">
+          <h4>Synopsis: </h4>
+          <p class="synopsis"></p>
+          <br>
+          <h4 class="rating"></h4>
+          <h5 class="release-date"></h5>
+          <h5 class="genre"></h5>
+        </div>
+      </div>
+      <div class="row">
+        <h5 class="review"></h5>
+      </div>
+    </div>
+  </div>
 </div>
 
 
@@ -127,6 +156,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <!-- Search/results/review script -->
   <script src ="js/search.js"></script>
+  <!-- <script src="js/showmovies.js"></script> -->
+  <script src="js/recentlywatched.js"></script>
   <script type="text/javascript" src="js/members.js"></script>
 
 </body>

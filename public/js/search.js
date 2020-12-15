@@ -42,7 +42,6 @@ movieFill = () => {
 
   $(".movie-name").append(newMovie.name);
   $(".poster-image").attr("src", newMovie.poster);
-  // Make sure to use this code in HTML:<img class="poster-image" height="300" src="">
   $(".synopsis").append(newMovie.synopsis);
   $(".rating").append("Rated ", newMovie.rating);
   $(".release-date").append("Released on ", newMovie.releaseDate);

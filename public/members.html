@@ -31,9 +31,57 @@
         <img src= "Notflix_title.PNG"></img>
         <br>
         <h2>Welcome <span class="member-name"></span></h2>
+<!-- Search Field -->
+        <div class="input-field">
+          <input placeholder="Enter a movie to search" id="searchInput" type="text">
+          <a class="btn modal-trigger" href="#modal1" id="movieSelect">Search</a>
+        </div>
+
       </div>
     </div>
   </div>
+<!-- Modal for Movie Result -->
+  <div id="modal1" class="modal container">
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+        <br>
+        <h1 class="movie-name"></h1>
+
+        <div class="row">
+
+          <div class="col-sm-5">
+            <img class="poster-image" height="350" src="">
+          </div>
+
+          <div class="col-sm-7">
+            <h4>Synopsis: </h4>
+            <p class="synopsis"></p>
+            <br>
+            <h4 class="rating"></h4>
+            <br>
+            <h5 class="release-date"></h4>
+              <br>
+            <h5 class="genre"></h4>
+          </div>
+
+        </div>
+        
+      <br>
+
+      <div class="row">
+        
+          <!-- Review field -->
+          <div class="input-field">
+            <input class="movieReview" placeholder="Enter your review here!" id="movieReview" type="text">
+            <a class="submit btn modal-close" id="submitReview">Submit Review</a>
+          
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+
 <!-- Insert card for Suggestions  -->
 <div class="row">
     <div class= "grid-container starter"></div>
@@ -75,6 +123,10 @@
     </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Materialize script (for modal) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Search/results/review script -->
+  <script src ="js/search.js"></script>
   <script type="text/javascript" src="js/members.js"></script>
 
 </body>

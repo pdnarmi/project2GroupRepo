@@ -13,3 +13,39 @@ nav {
   padding-bottom: 0px;
   max-height: 275px;
 }
+
+h1 {
+  color: rgb(235, 235, 235);
+}
+
+h4 {
+  color: rgb(235, 235, 235);
+}
+
+h5 {
+  color: rgb(235, 235, 235);
+}
+
+.modal {
+  background-color: rgb(20, 20, 20);
+  color: rgb(235, 235, 235);
+}
+
+.poster-image {
+  position: absolute;
+  left: 0;
+}
+
+.poster {
+  position: absolute;
+  left: 0;
+}
+
+#movieReview {
+  padding: 5px;
+  background-color: rgb(30, 30, 30);
+}
+
+.recviewd {
+  text-align: center;
+}

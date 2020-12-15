@@ -18,10 +18,11 @@ generateList = () => {
     moviePoster = movies[i].poster;
     const displayedMovie = $("<img>");
     displayedMovie.addClass("modal-trigger");
+    displayedMovie.addClass("posterDisplay");
     displayedMovie.attr({ href: "#modal2", "data-index": i });
     displayedMovie.attr("src", moviePoster);
     displayedMovie.attr("height", "350");
-    $(".recently-watched").append(displayedMovie);
+    $(".recently-watched").prepend(displayedMovie);
 
     showClickedMovie = () => {
       console.log("clicked!");

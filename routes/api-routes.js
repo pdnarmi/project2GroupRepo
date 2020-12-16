@@ -7,6 +7,7 @@ module.exports = function(app) {
   app.post("/api/movies", (req, res) => {
     console.log(req.body);
     db.Movie.create({
+      userID: req.user.id,
       title: req.body.title,
       poster: req.body.poster,
       synopsis: req.body.synopsis,
@@ -17,12 +18,20 @@ module.exports = function(app) {
     }).then(Movie => {
       res.json(Movie);
     });
+    console.log("!!!!!!!!!!!!", req.user.id);
   });
 
   // GET route for getting all of the movies
   app.get("/api/movies", (req, res) => {
     db.Movie.findAll({}).then(Movie => {
       res.json(Movie);
+    });
+  });
+
+  // GET route for user data
+  app.get("/api/user", (req, res) => {
+    db.User.findAll({}).then(User => {
+      res.json(User);
     });
   });
 

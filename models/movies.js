@@ -1,5 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
   const Movie = sequelize.define("Movie", {
+    userID: DataTypes.INTEGER,
     title: DataTypes.STRING,
     poster: DataTypes.STRING,
     synopsis: DataTypes.STRING,

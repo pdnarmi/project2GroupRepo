@@ -7,7 +7,21 @@ module.exports = function(sequelize, DataTypes) {
     rating: DataTypes.STRING,
     releaseDate: DataTypes.STRING,
     genre: DataTypes.STRING,
-    review: DataTypes.STRING
+    review: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+      validate: {
+        len: [1, 3500]
+      }
+    },
+    userScore: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        min: 1,
+        max: 10
+      }
+    }
   });
   return Movie;
 };

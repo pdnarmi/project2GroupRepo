@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require("path")
 
 
-const generateMarkdowns = require('../../utils/generateMarkdowns')
+const generateMarkdowns = require('../../utils/gulpfile')
 
   
 const questions = [

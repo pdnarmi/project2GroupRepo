@@ -14,7 +14,7 @@ generateList = () => {
   $(".recently-watched").empty();
   console.log(movies.length);
 
-  for (let i = 0; i < movies.length; i++) {
+  for (let i = 0; i < 21; i++) {
     moviePoster = movies[i].poster;
     const displayedMovie = $("<img>");
     displayedMovie.addClass("modal-trigger");

@@ -50,8 +50,16 @@ movieFill = () => {
 
 const reviewInput = $("input.movieReview");
 
+subReviewUserData = () => {
+  $.get("/api/user", data => {
+    user = data;
+    submitReview();
+  });
+};
+
 submitReview = () => {
   const movieData = {
+    userID: user.id,
     title: newMovie.name,
     poster: newMovie.poster,
     synopsis: newMovie.synopsis,
@@ -62,6 +70,7 @@ submitReview = () => {
   };
 
   postMovie(
+    movieData.userID,
     movieData.title,
     movieData.poster,
     movieData.synopsis,
@@ -72,8 +81,18 @@ submitReview = () => {
   );
 };
 
-postMovie = (title, poster, synopsis, rating, releaseDate, genre, review) => {
+postMovie = (
+  userID,
+  title,
+  poster,
+  synopsis,
+  rating,
+  releaseDate,
+  genre,
+  review
+) => {
   $.post("/api/movies", {
+    userID: userID,
     title: title,
     poster: poster,
     synopsis: synopsis,
@@ -85,4 +104,4 @@ postMovie = (title, poster, synopsis, rating, releaseDate, genre, review) => {
 };
 
 $("#movieSelect").on("click", movieSearch);
-$("#submitReview").on("click", submitReview);
+$("#submitReview").on("click", subReviewUserData);

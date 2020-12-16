@@ -10,41 +10,51 @@ $(document).ready(() => {
   $(".modal").modal();
 });
 
+getMovieIDforMatching = () => {
+  $.get("/api/user_data", data => {
+    user = data;
+    getRecent();
+  });
+};
+
 generateList = () => {
   $(".recently-watched").empty();
-  console.log(movies.length);
+  console.log("USER.ID", user.id);
 
-  for (let i = 0; i < movies.length; i++) {
-    moviePoster = movies[i].poster;
-    const displayedMovie = $("<img>");
-    displayedMovie.addClass("modal-trigger");
-    displayedMovie.addClass("posterDisplay");
-    displayedMovie.attr({ href: "#modal2", "data-index": i });
-    displayedMovie.attr("src", moviePoster);
-    displayedMovie.attr("height", "350");
-    $(".recently-watched").prepend(displayedMovie);
+  for (let i = 0; i < 21; i++) {
+    if (user.id === movies[i].userID) {
+      console.log("MOVIES.userID", movies[i].userID);
 
-    showClickedMovie = () => {
-      console.log("clicked!");
+      moviePoster = movies[i].poster;
+      const displayedMovie = $("<img>");
+      displayedMovie.addClass("modal-trigger");
+      displayedMovie.addClass("posterDisplay");
+      displayedMovie.attr({ href: "#modal2", "data-index": i });
+      displayedMovie.attr("src", moviePoster);
+      displayedMovie.attr("height", "350");
+      $(".recently-watched").prepend(displayedMovie);
 
-      title.empty();
-      poster.empty();
-      synopsis.empty();
-      rating.empty();
-      release.empty();
-      genre.empty();
-      review.empty();
+      showClickedMovie = () => {
+        console.log("clicked!");
 
-      title.append(movies[i].title);
-      poster.attr("src", movies[i].poster);
-      synopsis.append(movies[i].synopsis);
-      rating.append("Rated ", movies[i].rating);
-      release.append("Released on ", movies[i].releaseDate);
-      genre.append(movies[i].genre);
-      review.append("<h4>Your Review:</h4> ", movies[i].review);
-    };
+        title.empty();
+        poster.empty();
+        synopsis.empty();
+        rating.empty();
+        release.empty();
+        genre.empty();
+        review.empty();
 
-    $(displayedMovie).on("click", showClickedMovie);
+        title.append(movies[i].title);
+        poster.attr("src", movies[i].poster);
+        synopsis.append(movies[i].synopsis);
+        rating.append("Rated ", movies[i].rating);
+        release.append("Released on ", movies[i].releaseDate);
+        genre.append(movies[i].genre);
+        review.append("<h4>Your Review:</h4> ", movies[i].review);
+      };
+      $(displayedMovie).on("click", showClickedMovie);
+    }
   }
 };
 
@@ -55,4 +65,4 @@ getRecent = () => {
   });
 };
 
-getRecent();
+getMovieIDforMatching();

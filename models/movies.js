@@ -1,5 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
   const Movie = sequelize.define("Movie", {
+    userID: DataTypes.INTEGER,
     title: DataTypes.STRING,
     poster: DataTypes.STRING,
     synopsis: DataTypes.STRING,
@@ -11,14 +12,6 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
       validate: {
         len: [1, 3500]
-      }
-    },
-    userScore: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      validate: {
-        min: 1,
-        max: 10
       }
     }
   });

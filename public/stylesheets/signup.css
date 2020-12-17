@@ -1,6 +1,6 @@
 .btn {
   font-family: Arial, Helvetica, sans-serif;
-  background-color:red;
+  background-color:#14272A;
   color: white;
   width: 80px;
   height: 35px;
@@ -36,7 +36,7 @@ label {
 }
 
 body {
-  background-color: black;
+  background-color: #14272E;
 }
 
 form.login {

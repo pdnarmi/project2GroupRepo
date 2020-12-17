@@ -1,6 +1,5 @@
 # FilmStache 
-<!-- LOGO INSERT -->
-
+![picture](public/assets/readmeLogo.png)
 <br>
 
 **Index**<br>

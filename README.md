@@ -39,4 +39,13 @@ The code includes semantic tags that help navigate through the webiste with ease
 **Contribuotors**
 
 Thank you to the following people who contributed to this projectL <br>
-[Alex Nor
+[AlexNordin]
+[BenjaminSmith]
+[EllaThompson]
+[GabrielRivera]
+[GeorgetteBondarek]
+[PatrickNarmi]
+<br>
+
+**Demo**<br>
+

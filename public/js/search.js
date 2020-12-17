@@ -50,16 +50,8 @@ movieFill = () => {
 
 const reviewInput = $("input.movieReview");
 
-subReviewUserData = () => {
-  $.get("/api/user", data => {
-    user = data;
-    submitReview();
-  });
-};
-
 submitReview = () => {
   const movieData = {
-    userID: user.id,
     title: newMovie.name,
     poster: newMovie.poster,
     synopsis: newMovie.synopsis,
@@ -70,7 +62,6 @@ submitReview = () => {
   };
 
   postMovie(
-    movieData.userID,
     movieData.title,
     movieData.poster,
     movieData.synopsis,
@@ -81,18 +72,8 @@ submitReview = () => {
   );
 };
 
-postMovie = (
-  userID,
-  title,
-  poster,
-  synopsis,
-  rating,
-  releaseDate,
-  genre,
-  review
-) => {
+postMovie = (title, poster, synopsis, rating, releaseDate, genre, review) => {
   $.post("/api/movies", {
-    userID: userID,
     title: title,
     poster: poster,
     synopsis: synopsis,
@@ -104,4 +85,22 @@ postMovie = (
 };
 
 $("#movieSelect").on("click", movieSearch);
-$("#submitReview").on("click", subReviewUserData);
+$("#submitReview").on("click", submitReview);
+
+// Algolia JS
+const client = algoliasearch("RL3RKN9YKL", "063e139427a689373d8d66290f185a04");
+const index = client.initIndex("movie_titles");
+autocomplete("#searchInput", { hint: false }, [
+  {
+    source: autocomplete.sources.hits(index, { hitsPerPage: 5 }),
+    displayKey: "title",
+    templates: {
+      suggestion: function(suggestion) {
+        return suggestion._highlightResult.title.value;
+      }
+    }
+  }
+]).on("autocomplete:selected", (event, suggestion, dataset) => {
+  console.log(suggestion, dataset);
+  alert("dataset: " + dataset + ", " + suggestion.title);
+});

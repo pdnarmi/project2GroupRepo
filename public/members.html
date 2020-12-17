@@ -14,6 +14,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
     <!-- Compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="stylesheets/members.css" rel="stylesheet" />
   </head>
@@ -24,6 +26,7 @@
         <a href="#" class="brand-logo">Definitely not Netflix</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="members.html">Home</a></li>
+          <li><a href="library.html">Library</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="login.html">Log Out</a></li>
         </ul>
@@ -42,11 +45,7 @@
           <h2>Welcome <span class="member-name"></span></h2>
           <!-- Search Field -->
           <div class="input-field">
-            <input
-              placeholder="Enter a movie to search"
-              id="searchInput"
-              type="text"
-            />
+             <input class="form-control" id="searchInput" name="movies" type="text" placeholder='Enter a movie to search' />
             <a class="btn modal-trigger" href="#modal1" id="movieSelect"
               >Search</a
             >
@@ -109,7 +108,7 @@
     <!-- Insert card for Search Histroy -->
     <div class="row">
       <div class="grid-container starter recviewd">
-        <h4 class="">Your Reviewed Movies:</h4>
+        <h4 class="">Recently Reviewed:</h4>
         <div class="recently-watched"></div>
       </div>
     </div>

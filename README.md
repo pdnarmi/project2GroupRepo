@@ -3,10 +3,10 @@
 <br>
 
 **Index**<br>
-[Markdown - User Story](#User Story)<br>
-[Markdown - Accessibility](#Accessibility)<br>
-[Markdown - API's Used](#API's Used)<br>
-[Markdown - Contributors](#Contributors)<br>
+[User Story](#UserStory)<br>
+[Accessibility](#Accessibility)<br>
+[API's Used](#API'sUsed)<br>
+[Contributors](#Contributors)<br>
 
 
 **User Story**<br>
@@ -26,13 +26,24 @@ After doing this, you can visit your personalized library and find the movies yo
 
 <br>
 The project represents the 2nd group project for the six contributors enrolled in the UNC Chapel Hill coding bootcamp fall of 2020.  The idea was had to create a database that a user code catalog the movies they have watched, and be able to revisit the reivews in which they personally wrote.  The page can be viewed here: 
-<!-- insert hereko and github -->
+<br>
+
+<br>
+<br>
 
 **Accessibility**
+
 The code includes semantic tags that help navigate through the webiste with ease. 
 
+<br>
+<br>
+
 **API's Used**
 * http://www.omdbapi.com/ 
+
+<br>
+<br>
+
 
 **Contribuotors**
 
@@ -48,18 +59,5 @@ Thank you to the following people who contributed to this project: <br>
 
 
 
-
-**API's Used**
-* http://www.omdbapi.com/ 
-**Contribuotors**
-
-Thank you to the following people who contributed to this project: <br>
-* [Alex Nordin] ()
-* [Benjamin Smith]
-* [Ella Thompson]
-* [Gabriel Rivera]
-* [Georgette Bondarek](https://georgettebondarek.github.io/GeorgetteBPortfolio/)
-* [Patrick Narmi](https://pdnarmi.github.io/DeveloperPortfolio/)
-<br>
 
 

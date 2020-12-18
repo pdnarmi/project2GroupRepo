@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign-Up Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="stylesheets/signup.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <img src="assets/notflixicon.png" class="img" />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h1>Sign Up Today</h1>
+          <form class="signup">
+            <div class="form-group">
+              <label for="exampleInputEmail1">First Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstname-input"
+                placeholder="First Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Last Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastname-input"
+                placeholder="Last Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">E-mail Address:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email-input"
+                placeholder="E-mail Address"
+              />
+            </div>
+            <br />
+            <div class="form-group">
+              <label for="exampleInputPassword1"
+                >New Password (must be between 8-12 alphanumeric
+                characters):</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="password-input"
+                placeholder="New Password"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Confirm Password:</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password-input"
+                placeholder="Confirm Password"
+              />
+            </div>
+            <div
+              style="display: none"
+              id="alert"
+              class="alert alert-danger"
+              role="alert"
+            >
+              <span
+                class="glyphicon glyphicon-exclamation-sign"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Error:</span>
+              <span class="msg"
+                >You have entered the wrong e-mail address or password. Please
+                try again!</span
+              >
+            </div>
+            <button type="submit" class="btn btn-default">Sign Up</button>
+          </form>
+          <br />
+          <br />
+          <p><a href="login.html">Made a mistake? Back to Login!</a></p>
+          <p><a href="forgotpassword.html">Forgot your password?</a></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/signup.js"></script>
+  </body>
+</html>

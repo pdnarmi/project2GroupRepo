@@ -48,9 +48,9 @@ The code includes semantic tags that help navigate through the webiste with ease
 **Contribuotors**
 
 Thank you to the following people who contributed to this project: <br>
-* [Alex Nordin] ()
-* [Benjamin Smith]
-* [Ella Thompson]
+* [Alex Nordin](https://apnordin.github.io/08-Portfolio/)
+* Benjamin Smith
+* [Ella Thompson](https://ebsizzlin.github.io/ResponsivePortfolio/)
 * [Gabriel Rivera]
 * [Georgette Bondarek](https://georgettebondarek.github.io/GeorgetteBPortfolio/)
 * [Patrick Narmi](https://pdnarmi.github.io/DeveloperPortfolio/)

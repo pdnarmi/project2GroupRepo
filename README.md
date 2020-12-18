@@ -3,7 +3,7 @@
 <br>
 
 **Index**<br>
-User Story<br>
+[Markdown - User Story](#User Story)<br>
 Accessibility<br>
 API's Used<br>
 Contributors<br>
@@ -36,14 +36,14 @@ The code includes semantic tags that help navigate through the webiste with ease
 
 **Contribuotors**
 
-Thank you to the following people who contributed to this projectL <br>
-* [Alex Nordin]
+Thank you to the following people who contributed to this project: <br>
+* [Alex Nordin] ()
 * [Benjamin Smith]
 * [Ella Thompson]
 * [Gabriel Rivera]
-* [Georgette Bondarek]
-* [Patrick Narmi]
+* [Georgette Bondarek](https://georgettebondarek.github.io/GeorgetteBPortfolio/)
+* [Patrick Narmi](https://pdnarmi.github.io/DeveloperPortfolio/)
 <br>
 
-**Demo**<br>
+
 

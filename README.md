@@ -4,10 +4,10 @@
 
 **Index**<br>
 [Markdown - User Story](#User Story)<br>
-Accessibility<br>
-API's Used<br>
-Contributors<br>
-Demo<br>
+[Markdown - Accessibility](#Accessibility)<br>
+[Markdown - API's Used](#API's Used)<br>
+[Markdown - Contributors](#Contributors)<br>
+
 
 **User Story**<br>
   If you are here, then you LOVE movies as much as we do!  Are you looking for new movies? Can't remember what you have watched and if you would watch it? Then you have landed on the right application to meet your needs.  FilmStache is an application that allows you to Search. Watch. and Review and Archive your movies.  You have your own personal library, with your own critique of the movie so that you may return to your review and decide if you will watch that movie again.  Within FilmStache, you can search movies and view reviews from other members of the FilmStache community.  
@@ -45,5 +45,21 @@ Thank you to the following people who contributed to this project: <br>
 * [Patrick Narmi](https://pdnarmi.github.io/DeveloperPortfolio/)
 <br>
 
+
+
+
+
+**API's Used**
+* http://www.omdbapi.com/ 
+**Contribuotors**
+
+Thank you to the following people who contributed to this project: <br>
+* [Alex Nordin] ()
+* [Benjamin Smith]
+* [Ella Thompson]
+* [Gabriel Rivera]
+* [Georgette Bondarek](https://georgettebondarek.github.io/GeorgetteBPortfolio/)
+* [Patrick Narmi](https://pdnarmi.github.io/DeveloperPortfolio/)
+<br>
 
 

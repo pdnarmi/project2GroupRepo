@@ -5,6 +5,7 @@
 **Index**<br>
 [User Story](#UserStory)<br>
 [Accessibility](#Accessibility)<br>
+[License](#License)<br>
 [API's Used](#API'sUsed)<br>
 [Contributors](#Contributors)<br>
 
@@ -44,6 +45,10 @@ The code includes semantic tags that help navigate through the webiste with ease
 <br>
 <br>
 
+**License**
+
+*None
+
 
 **Contribuotors**
 
@@ -54,7 +59,10 @@ Thank you to the following people who contributed to this project: <br>
 * [Gabriel Rivera]
 * [Georgette Bondarek](https://georgettebondarek.github.io/GeorgetteBPortfolio/)
 * [Patrick Narmi](https://pdnarmi.github.io/DeveloperPortfolio/)
+
+If you would like to contribute to this project please make sure you install npm-i and a pull request.  Once ou submit a merge request we will review it. 
 <br>
+
 
 
 

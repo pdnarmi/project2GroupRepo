@@ -11,7 +11,7 @@ movieSearch = () => {
     .val()
     .trim();
 
-  queryURL = "http://www.omdbapi.com/?t=" + searchInput + "&apikey=6c279cf4";
+  queryURL = "https://www.omdbapi.com/?t=" + searchInput + "&apikey=6c279cf4";
 
   $.ajax({
     url: queryURL,

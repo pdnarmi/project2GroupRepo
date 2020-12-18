@@ -18,7 +18,6 @@ module.exports = function(app) {
     }).then(Movie => {
       res.json(Movie);
     });
-    console.log("!!!!!!!!!!!!", req.user.id);
   });
 
   // GET route for getting all of the movies

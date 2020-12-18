@@ -19,12 +19,8 @@ getMovieIDforMatching = () => {
 
 generateList = () => {
   $(".recently-watched").empty();
-  console.log("USER.ID", user.id);
-
   for (let i = 0; i < 21; i++) {
     if (user.id === movies[i].userID) {
-      console.log("MOVIES.userID", movies[i].userID);
-
       moviePoster = movies[i].poster;
       const displayedMovie = $("<img>");
       displayedMovie.addClass("modal-trigger");
@@ -35,8 +31,6 @@ generateList = () => {
       $(".recently-watched").prepend(displayedMovie);
 
       showClickedMovie = () => {
-        console.log("clicked!");
-
         title.empty();
         poster.empty();
         synopsis.empty();

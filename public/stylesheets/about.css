@@ -1,7 +1,7 @@
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
 }
 
 h3 {
@@ -9,19 +9,24 @@ h3 {
     color: #bbddea;
     text-align: center;
 }
-  
+
+.jumbotron {
+  background-color:  #14272E;
+  border-color: #14272E;
+}
+
 p {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
 }
-  
+
 label {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
 }
-  
+
 body {
     background-color: #14272E;
 }
@@ -35,7 +40,8 @@ a {
 
 nav {
     background-color: #14272E;
-  }
+
+}
 
 .img {
     height: 99%;

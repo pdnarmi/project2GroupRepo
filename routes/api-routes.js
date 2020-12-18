@@ -7,6 +7,7 @@ module.exports = function(app) {
   app.post("/api/movies", (req, res) => {
     console.log(req.body);
     db.Movie.create({
+      userID: req.user.id,
       title: req.body.title,
       poster: req.body.poster,
       synopsis: req.body.synopsis,
@@ -26,6 +27,13 @@ module.exports = function(app) {
     });
   });
 
+  // GET route for user data
+  app.get("/api/user", (req, res) => {
+    db.User.findAll({}).then(User => {
+      res.json(User);
+    });
+  });
+
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
@@ -42,6 +50,8 @@ module.exports = function(app) {
   // otherwise send back an error
   app.post("/api/signup", (req, res) => {
     db.User.create({
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
       email: req.body.email,
       password: req.body.password
     })
@@ -68,6 +78,8 @@ module.exports = function(app) {
       // Otherwise send back the user's email and id
       // Sending back a password, even a hashed password, isn't a good idea
       res.json({
+        firstName: req.user.firstName,
+        lastName: req.user.lastName,
         email: req.user.email,
         id: req.user.id
       });

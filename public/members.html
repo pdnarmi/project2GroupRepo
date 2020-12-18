@@ -1,61 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Members' Homepage</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="stylesheets/members.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <title>Members' Homepage</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <link href="stylesheets/members.css" rel="stylesheet">
-</head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="members.html" class="brand-logo">Film Stache</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="members.html">Home</a></li>
+          <li><a href="library.html">Library</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="login.html">Log Out</a></li>
+        </ul>
+      </div>
+    </nav>
 
-<body>
-  <nav>
-    <div class="nav-wrapper">
-      <a href="members.html" class="brand-logo">Film Stache</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="members.html">Home</a></li>
-        <li><a href="library.html">Library</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="login.html">Log Out</a></li>
-      </ul>
-    </div>
-</nav>
-        
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <img class= "img" src= "notlflixicon.PNG"></img>
-        <br>
-        <h2>Welcome <span class="member-name"></span></h2>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="row">
+        <div class="container">
+          <div class="col-md-6 col-md-offset-3">
+          <img src="assets/notflixIcon.png" class="img"></img>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-<!-- Insert card for Suggestions  -->
-<div class="row">
-    <div class= "grid-container starter"></div>
-</div>
 
-<!-- Insert card for Database -->
-<div class="row">
-    <div class= "grid-container starter"></div>
-</div>
-
-<!-- Insert card for Search Histroy -->
-<div class="row">
-    <div class= "grid-container starter"></div>
-</div>
-
-
-<footer class="page-footer">
     <div class="container">
       <div class="row">
-        <div class="col l12">
+        <div class="col-md-6 col-md-offset-3">
+          <h2>Welcome <span class="member-name"></span></h2>
+          <!-- Search Field -->
+          <div class="input-field">
+             <input class="form-control" id="searchInput" name="movies" type="text" placeholder='Enter a movie to search' />
+            <a class="btn modal-trigger" href="#modal1" id="movieSelect"
+              >Search</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for Movie Result -->
+    <div id="modal1" class="modal container">
+      <div class="row">
+        <div class="col-md-11 col-md-offset-1">
+          <br />
+          <h1 class="movie-name"></h1>
+
           <div class="row">
+            <div class="col-sm-5">
+              <img class="poster-image" height="350" src="" />
+            </div>
+
+            <div class="col-sm-7">
+              <h4>Synopsis:</h4>
+              <p class="synopsis"></p>
+              <br />
+              <h4 class="rating"></h4>
+              <br />
+              <h5 class="release-date"></h5>
+              <br />
+              <h5 class="genre"></h5>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <!-- Review field -->
+            <div class="input-field">
+              <input
+                class="movieReview"
+                placeholder="Enter your review here!"
+                id="movieReview"
+                type="text"
+              />
+              <a class="submit btn modal-close" id="submitReview"
+                >Submit Review</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Insert card for Suggestions  -->
+    <div class="row">
+      <div class="grid-container starter"></div>
+    </div>
+
+<<<<<<< HEAD
+<footer class="page-footer">
+    <div class="container">
+=======
+    <!-- Insert card for Database -->
+    <div class="row">
+      <div class="grid-container starter"></div>
+    </div>
+
+    <!-- Insert card for Search Histroy -->
+    <div class="row">
+      <div class="grid-container starter recviewd">
+        <h4 class="">Recently Reviewed:</h4>
+        <div class="recently-watched"></div>
+      </div>
+    </div>
+    <!-- Modal for reviewed movie -->
+    <div id="modal2" class="modal container">
+>>>>>>> main
+      <div class="row">
+        <div class="col-md-11 col-md-offset-1">
+          <br />
+          <h1 class="title"></h1>
+          <div class="row">
+<<<<<<< HEAD
             <div class="col l3">
             </div>
             <div class="col l1"></div>
@@ -64,15 +137,60 @@
               <p class="text">
                 We love movies as much as you and want to be able to rewatch our favorites over and over. Film Stache: Search, Rate, Recommend, and find your favorites movies. 
               </p>
+=======
+            <div class="col-sm-5">
+              <img class="poster" height="350" src="" />
             </div>
+            <div class="col-sm-7">
+              <h4>Synopsis:</h4>
+              <p class="synopsis"></p>
+              <br />
+              <h4 class="rating"></h4>
+              <br />
+              <h5 class="release-date"></h5>
+              <br />
+              <h5 class="genre"></h5>
+>>>>>>> main
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <p class="review"></p>
           </div>
         </div>
       </div>
     </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/members.js"></script>
+    <footer class="page-footer red">
+      <div class="container">
+        <div class="row">
+          <div class="col l12">
+            <div class="row">
+              <div class="col l3">
+                <img src="#" height="200" alt="#" />
+              </div>
+              <div class="col l1"></div>
+              <div class="col l8">
+                <h5 class="white-text">NOTFLIX</h5>
+                <p class="grey-text text-lighten-4">
+                  We love movies as much as you and want to be able to rewatch
+                  our favorites over and over. Notflix: Search, Rate, Recommend,
+                  and find your favorites movies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Materialize script (for modal) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Search/results/review script -->
+    <script src="js/search.js"></script>
+    <!-- <script src="js/showmovies.js"></script> -->
+    <script src="js/recentlywatched.js"></script>
+    <script type="text/javascript" src="js/members.js"></script>
+  </body>
 </html>

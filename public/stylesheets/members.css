@@ -23,6 +23,10 @@ h2 {
   color: #14272e;
 }
 
+h5 {
+  color: rgb(235, 235, 235);
+}
+
 .jumbotron {
   background-color: #14272e;
   border-color: #14272e;
@@ -36,10 +40,6 @@ h1 {
 }
 
 h4 {
-  color: rgb(235, 235, 235);
-}
-
-h5 {
   color: rgb(235, 235, 235);
 }
 
@@ -69,4 +69,8 @@ h5 {
 
 .posterDisplay {
   padding: 10px;
+}
+
+.nav-wrapper {
+  padding-left: 24px;
 }

@@ -56,7 +56,7 @@ Thank you to the following people who contributed to this project: <br>
 * [Alex Nordin](https://apnordin.github.io/08-Portfolio/)
 * Benjamin Smith
 * [Ella Thompson](https://ebsizzlin.github.io/ResponsivePortfolio/)
-* [Gabriel Rivera]
+* [Gabriel Rivera](https://ctrlgabe.github.io/Portfolio/)
 * [Georgette Bondarek](https://georgettebondarek.github.io/GeorgetteBPortfolio/)
 * [Patrick Narmi](https://pdnarmi.github.io/DeveloperPortfolio/)
 

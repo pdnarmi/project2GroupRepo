@@ -1,41 +1,35 @@
 body {
-  background-color: #14272E;
-
+  background-color: #14272e;
 }
 
 nav {
-  background-color: #14272E;
-  
+  background-color: #14272e;
 }
 
 h2 {
-  color: #bbddea
-
+  color: #bbddea;
 }
 
 .img {
   height: 99%;
   width: 99%;
-
 }
 
-.page-footer{
+.page-footer {
   background-color: #bbddea;
-
 }
 
 .text {
-  color: #14272E
-
+  color: #14272e;
 }
 
 h5 {
-  color: #14272E
+  color: rgb(235, 235, 235);
 }
 
 .jumbotron {
-  background-color: #14272E;
-  border-color: #14272E;
+  background-color: #14272e;
+  border-color: #14272e;
   padding-top: 0px;
   padding-bottom: 0px;
   max-height: 275px;

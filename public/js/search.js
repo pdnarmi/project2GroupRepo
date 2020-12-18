@@ -95,12 +95,9 @@ autocomplete("#searchInput", { hint: false }, [
     source: autocomplete.sources.hits(index, { hitsPerPage: 5 }),
     displayKey: "title",
     templates: {
-      suggestion: function(suggestion) {
+      suggestion: suggestion => {
         return suggestion._highlightResult.title.value;
       }
     }
   }
-]).on("autocomplete:selected", (event, suggestion, dataset) => {
-  console.log(suggestion, dataset);
-  alert("dataset: " + dataset + ", " + suggestion.title);
-});
+]);

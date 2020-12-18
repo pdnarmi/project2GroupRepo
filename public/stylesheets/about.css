@@ -6,7 +6,7 @@ h1 {
 
 h3 {
     font-family: Arial, Helvetica, sans-serif;
-    color: red;
+    color: #bbddea;
     text-align: center;
 }
   
@@ -23,18 +23,23 @@ label {
 }
   
 body {
-    background-color: black;
+    background-color: #14272E;
 }
   
 a {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    color: red;
+    color: #bbddea;
 
 }
 
-
 nav {
-    background-color: black;
+    background-color: #14272E;
   }
+
+.img {
+    height: 99%;
+    width: 99%;
+}
+
 

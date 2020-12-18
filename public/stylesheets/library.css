@@ -1,18 +1,18 @@
 body {
-    background-color: black;
+    background-color:  #14272E;
   }
   
   nav {
-    background-color: black;
+    background-color: #14272E;
   }
   
   .jumbotron {
-    background-color: black;
-    border-color: black;
+    background-color:  #14272E;
+    border-color: #14272E;
   }
   
   a {
-    color: black;
+    color: #14272E;
     font-size: 30px;
   }
   
@@ -38,6 +38,11 @@ body {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+  }
+
+  .img {
+      height: 100%;
+      width: 100%
   }
   
   /*makes a two column-layout instead of four columns */

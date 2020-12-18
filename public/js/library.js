@@ -31,26 +31,33 @@ showAllMovies = () => {
     $(".all-movies").prepend(displayedMovie);
 
     showMovie = () => {
-      title.empty();
-      poster.empty();
-      synopsis.empty();
-      rating.empty();
-      release.empty();
-      genre.empty();
-      review.empty();
-      reviewedBy.empty();
+      for (let j = 0; j < user.length; j++) {
+        if (user[j].id === movies[i].userID) {
+          console.log("user: ", user);
+          title.empty();
+          poster.empty();
+          synopsis.empty();
+          rating.empty();
+          release.empty();
+          genre.empty();
+          review.empty();
+          reviewedBy.empty();
 
-      title.append(movies[i].title);
-      poster.attr("src", movies[i].poster);
-      synopsis.append(movies[i].synopsis);
-      rating.append("Rated ", movies[i].rating);
-      release.append("Released on ", movies[i].releaseDate);
-      genre.append(movies[i].genre);
-      review.append("<h4>User Review:</h4> ", movies[i].review);
-      reviewedBy.append(
-        "<span>Reviewed By: </span>",
-        user[i].firstName + " " + user[i].lastName
-      );
+          console.log("movies[i].userID ", movies[i].userID);
+
+          title.append(movies[i].title);
+          poster.attr("src", movies[i].poster);
+          synopsis.append(movies[i].synopsis);
+          rating.append("Rated ", movies[i].rating);
+          release.append("Released on ", movies[i].releaseDate);
+          genre.append(movies[i].genre);
+          review.append("<h4>User Review:</h4> ", movies[i].review);
+          reviewedBy.append(
+            "<span>Reviewed By: </span>",
+            user[j].firstName + " " + user[j].lastName
+          );
+        }
+      }
     };
     $(displayedMovie).on("click", showMovie);
   }

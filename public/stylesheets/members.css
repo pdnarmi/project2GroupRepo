@@ -1,14 +1,41 @@
 body {
-  background-color: black;
+  background-color: #14272E;
+
 }
 
 nav {
-  background-color: black;
+  background-color: #14272E;
+  
+}
+
+h2 {
+  color: #bbddea
+
+}
+
+.img {
+  height: 99%;
+  width: 99%;
+
+}
+
+.page-footer{
+  background-color: #bbddea;
+
+}
+
+.text {
+  color: #14272E
+
+}
+
+h5 {
+  color: #14272E
 }
 
 .jumbotron {
-  background-color: black;
-  border-color: black;
+  background-color: #14272E;
+  border-color: #14272E;
   padding-top: 0px;
   padding-bottom: 0px;
   max-height: 275px;
@@ -19,10 +46,6 @@ h1 {
 }
 
 h4 {
-  color: rgb(235, 235, 235);
-}
-
-h5 {
   color: rgb(235, 235, 235);
 }
 

@@ -60,7 +60,7 @@ Thank you to the following people who contributed to this project: <br>
 * [Georgette Bondarek](https://georgettebondarek.github.io/GeorgetteBPortfolio/)
 * [Patrick Narmi](https://pdnarmi.github.io/DeveloperPortfolio/)
 
-If you would like to contribute to this project please make sure you install npm-i and a pull request.  Once ou submit a merge request we will review it. 
+If you would like to contribute to this project please make sure you install npm-i and a pull request.  Once you submit a merge request we will review the changes and suggestions. 
 <br>
 
 

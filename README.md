@@ -13,6 +13,8 @@
 **User Story**<br>
   If you are here, then you LOVE movies as much as we do!  Are you looking for new movies? Can't remember what you have watched and if you would watch it? Then you have landed on the right application to meet your needs.  FilmStache is an application that allows you to Search. Watch. and Review and Archive your movies.  You have your own personal library, with your own critique of the movie so that you may return to your review and decide if you will watch that movie again.  Within FilmStache, you can search movies and view reviews from other members of the FilmStache community.  
 
+To begin using our app pleaes visit: https://project2group9app.herokuapp.com/  
+
 "FilmStache" allows each user to personalize their very own library with a quick signup process by using your email address and a password.
 ![picture](../project2GroupRepo/public/assets/signpScreenShot.png)
 
